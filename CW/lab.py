@@ -1,4 +1,4 @@
-#Lab-3
+   #Lab-3
 num = int(input())
 if num % 2 == 0:
     print("Even")
