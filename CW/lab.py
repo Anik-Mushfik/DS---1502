@@ -1,4 +1,6 @@
 #Lab-3
-x = 10
-x = 20
-print(x)
+num = int(input())
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
