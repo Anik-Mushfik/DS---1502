@@ -1,9 +1,11 @@
-rich  = int(input("Number of rich people: "))
-poor = int(input("Number of poor people: "))
-if rich > poor :
-    print("Do not steal.")
-if rich < poor :
-    if poor%4 == 0 and rich%3 ==0:
-        print("Steal.")
-    else:
-        print("Do not steal")
+run = int(input("Runs: "))
+over_bowled = int(input("Over bowled: "))
+target = int(input("Target: "))
+run_remain = target - run
+over_remain = 20 - over_bowled
+runrate = run / over_bowled
+estimated_run = float(runrate) * float(over_remain)
+if estimated_run > run_remain:
+    print("Might win")
+else:
+    print("Might lose")
