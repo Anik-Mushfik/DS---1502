@@ -102,6 +102,80 @@ total_price = price * quantity
 print(f"The total price of {name} purchased: {total_price} BDT")
 
 
+#Problem-9:
+print("Chose an option to calculate the area- \n 1.Circle \n 2.Square \n 3.Rectangle \n 4.Triangle")
+choice = int(input("Enter choice of shape: "))
+if choice == 1:
+    radious = int(input("Enter the radius: "))
+    area = 3.14 * (radious*radious)
+    print(f"Area of the circle: {area}")
+elif choice == 2:
+    length = int(input("Enter the length: "))
+    area = length * length
+    print(f"Area of the square: {area}")
+elif choice == 3:
+    side_1 = int(input("Enter the length for one side: "))
+    side_2 = int(input("Enter the length for another side: "))
+    area = side_1 * side_2
+    print(f"Area of the rectangle: {area}")
+elif choice == 4:
+    base =int(input("Enter the base: "))
+    height = int(input("Enter the height: "))
+    area = int(.5 * base * height)
+    print(f"Area of the triangle: {area}")
+else:
+    print("Input error!")
+
+
+#Problem-10:
+marks = float(input("Enter your final marks: "))
+if marks<=100 and marks>=90:
+    print("Grade: A, Outstanding")
+elif marks<=89 and marks>=86:
+    print("Grade: A-, Excellent")
+elif marks<=85 and marks>=82:
+    print("Grade: B+, Very Good")
+elif marks<=81 and marks>=78:
+    print("Grade: B, Good")
+elif marks<=77 and marks>=74:
+    print("Grade: B-, Above Average")
+elif marks<=73 and marks>=70:
+    print("Grade: C+, Average")
+elif marks<=69 and marks>=66:
+    print("Grade: C, Below Average")
+elif marks<=65 and marks>=62:
+    print("Grade: C-, Poor")
+elif marks<=61 and marks>=58:
+    print("Grade: D+, Very Poor")
+elif marks<=57 and marks>=55:
+    print("Grade: D, Pass")
+elif marks<55 and marks>=0:
+    print("Grade: F, Fail")
+else:
+    print("Input Error!")
+
+
+#Problem-11:
+name = input("Enter employee name: ")
+work_hour = int(input("Enter the work hours: "))
+years_work = int(input("Enter years of work: "))
+done_tasks = int(input("Enter tasks done: "))
+tasks_given = int(input("Enter tasks given: "))
+productivity = done_tasks / tasks_given
+if work_hour>20 and years_work>=2:
+    if productivity>=0.5 and productivity<=0.69:
+        print(f"{name} is eligible for the Bronze bonus")
+    elif productivity>=0.70 and productivity<=0.89:
+        print(f"{name} is eligible for the Silver bonus")
+    elif productivity>=0.90 and productivity<=1.00:
+        print(f"{name} is eligible for the Gold bonus")
+    else:
+        print(f"{name} is eligible for the normal bonus")
+else:
+    print(f"{name} is not eligible for a bonus")
+
+
+
 #Practice-12:
 rich  = int(input("Number of rich people: "))
 poor = int(input("Number of poor people: "))
@@ -142,5 +216,3 @@ if weight%2==0 and weight>2:
     print('Yes')
 else:
     print('No')
-
-
