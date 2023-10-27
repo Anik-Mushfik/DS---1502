@@ -1,5 +1,5 @@
-line = 'a quick brown fox jumps over a lazy dog htv'
-on = 'a quick brown fox jumps over a lazy dog htv'
+line = 'a quick brown fox jumps over the lazy dog'
+on = 'a quick brown fox jumps over the lazy dog'
 while on == line:
     out = input(f'You are doing great. Try to do it faster!!!\n')
     on = out
