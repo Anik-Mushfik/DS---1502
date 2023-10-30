@@ -81,3 +81,78 @@ if (wrok_hour > 20 and service_time >= 2):
         print(f"{employee_name} is eligible for the normal bonus")
 else:
     print(f"{employee_name} is not eligible for a bonus")
+
+
+#calender
+a = int(input())
+
+if a == 1 :
+    month = 'January'
+elif a == 2 :
+    month = 'February'
+elif a == 3 :
+    month = 'March'
+elif a == 4 :
+    month = 'April'
+elif a == 5 :
+    month = 'May'
+elif a == 6 :
+    month = 'June'
+elif a == 7 :
+    month = 'July'
+elif a == 8 :
+    month = 'August'
+elif a == 9 :
+    month = 'September'
+elif a == 10 :
+    month = 'October'
+elif a == 11 :
+    month = 'November'
+elif a == 12 :
+    month = 'December'
+else:
+    print(f"invalid input")
+
+if month == 'January' or month=='March' or month=='May' or month=='July' or month=='August' or month=='October' or month=='December':
+    days = 31
+elif month == 'April' or month=='June' or month=='September' or month=='November':
+    days = 30
+else:
+    days = 28
+print(f"Month: {month}, Days: {days}")
+
+#or,
+num = int(input("Enter a number between 1 to 12: "))
+months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+if 1<= num and num <=12:
+    month = months[num-1]
+    d31 = [0,2,4,6,7,9,11]
+    d30 = [3,5,8,10,12]
+    if months.index(month) in d31: 
+        days = 31
+    elif months.index(month) in d30:
+        days = 30
+    else:
+        days = 28
+    print(f"The month corresponding to {num} is {month} and it has {days} days.")
+else:
+    print(f"Invalid input. Please enter a number between 0 to 7.")
+
+
+
+#voting
+age = int(input("Enter your age: "))
+if age>= 18:
+    print(f"You are eligible for voting.")
+else:
+    print(f"You are not eligible for voting.")
+
+
+#Week day
+num = int(input("Enter a number between 1 to 7: "))
+days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+if 1<= num and num <=7:
+    day = days[num-1]
+    print(f"The day corresponding to {num} is {day}.")
+else:
+    print(f"Invalid input. Please enter a number between 0 to 12.")
