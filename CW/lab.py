@@ -136,7 +136,7 @@ if 1<= num and num <=12:
         days = 28
     print(f"The month corresponding to {num} is {month} and it has {days} days.")
 else:
-    print(f"Invalid input. Please enter a number between 0 to 7.")
+    print(f"Invalid input. Please enter a number between 0 to 12.")
 
 
 
@@ -155,4 +155,4 @@ if 1<= num and num <=7:
     day = days[num-1]
     print(f"The day corresponding to {num} is {day}.")
 else:
-    print(f"Invalid input. Please enter a number between 0 to 12.")
+    print(f"Invalid input. Please enter a number between 0 to 7.")
