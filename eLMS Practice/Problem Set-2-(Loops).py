@@ -74,7 +74,6 @@ for z in divisors_num1:
         gcd = z
 print(f"GCD: {gcd}")
 ##LCM
-lcm = 0
 count = 1
 while 1==1:
     if (count % num1 == 0.0) and (count % num2 == 0.0):
@@ -92,21 +91,29 @@ for i in range(1,N+1):
     factorial *= i
 print(f"The factorial of {N} is {factorial}")
 
+#Or,
+N = int(input("Enter the number: "))
+i = 1
+factorial = 1
+while i < (N+1):
+    factorial *= i
+    i += 1
+print(f"The factorial of {N} is {factorial}")
+
 
 #Problem-8:
 N = int(input())
 if N == 1:
     print(("Not prime"))
 else:
-    for i in range(1,N+1):
-        if i == 1 or i == N: continue
+    for i in range(2,((N//2) + 1)):
         if N % i == 0:
             print("Not Prime")
             break
     else:
         print("Prime")
 
-#or,
+#or, chole but valo hoye nai code ta-
 N = int(input())
 for i in range(1,N+1):
     if N == 1:
@@ -118,6 +125,28 @@ for i in range(1,N+1):
         break
 else:
     print("Prime")
+
+# Saddam sirer solution:(vul silo thik korsi)
+# code ta bujhte shohoj but boro. amar ta bujhte kom shohoj kintu choto ase.
+N = int(input("Enter the number: "))
+# ২ এর চেয়ে ছোট সব সংখ্যা এবং নেগেটিভ সংখ্যাও প্রাইম সংখ্যা নয়।
+if N < 2:
+    print("Not prime")
+else:
+    i = 2
+    # ২ সবচেয়ে ছোট প্রাইম নম্বর।
+    is_prime = True
+    # কোনো সংখ্যাকে তার half এর চেয়ে বড় কোনো সংখ্যা দিয়ে ভাগ করলে ভাগশেষ(%) সবসময় শুণ্য থেকে বড় (>০) হয়।
+    while i < (N/2):
+        if N % i == 0:
+            is_prime = False
+            break
+        i += 1
+    if is_prime:
+        print("Prime")
+    else:
+        print("Not Prime")
+
 
 
 #Problem-9:
