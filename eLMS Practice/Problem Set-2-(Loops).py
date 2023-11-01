@@ -13,7 +13,7 @@ numbers = list(range(1, n + 1))
 print(*numbers)
 
 
-#3
+#Problem-3:
 n = int(input())
 for x in range(1,n+1):
     if x%2 ==0:
@@ -22,7 +22,7 @@ for x in range(1,n+1):
         print(1, end=" ")
 
 
-#4
+#Problem-4:
 n = int(input())
 sum = 0
 for x in range(0,n):
@@ -33,7 +33,7 @@ print(f"Average: {average}")
 print(f"Average: {sum/n}")
 
 
-#max value
+#Max value:
 n = int(input())
 max = float(input())
 for x in range(0,n-1):
@@ -43,7 +43,7 @@ for x in range(0,n-1):
 print(f"Max Value: {max}")
 
 
-#5-
+#Problem-5:
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 if (num1 < num2):
@@ -56,7 +56,7 @@ if x != y:
 print("END")
 
 
-#6-
+#Problem-6:
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 ##GCD
@@ -85,7 +85,7 @@ while 1==1:
 
 
 
-#7
+#Problem-7:
 N = int(input())
 factorial = 1
 for i in range(1,N+1):
@@ -93,7 +93,7 @@ for i in range(1,N+1):
 print(f"The factorial of {N} is {factorial}")
 
 
-#8
+#Problem-8:
 N = int(input())
 if N == 1:
     print(("Not prime"))
@@ -119,6 +119,8 @@ for i in range(1,N+1):
 else:
     print("Prime")
 
+
+#Problem-9:
 
 
 
