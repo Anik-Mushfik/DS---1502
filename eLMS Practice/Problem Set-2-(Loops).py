@@ -11,6 +11,7 @@ numbers = list(range(1, n + 1))
 
 ##The * operator is used to unpack the elements of the list and pass them as separate arguments to the print() function, which then prints them with spaces in between.
 print(*numbers)
+print(*numbers, sep=",")
 
 
 #Problem-3:
@@ -88,7 +89,7 @@ while 1==1:
 N = int(input())
 factorial = 1
 for i in range(1,N+1):
-    factorial *= i
+    factorial *= i # factorial = factorial * i
 print(f"The factorial of {N} is {factorial}")
 
 #Or,
@@ -160,6 +161,11 @@ for i in range(1,n+1):
     for j in range(i):
         print("*", end=" ")
     print()
+
+#Or,
+n=int(input())
+for x in range(1,n+1):
+	print(x*'*')
 
 
 #18-
