@@ -151,6 +151,41 @@ else:
 
 
 #Problem-9:
+lst = [1,1]
+num = int(input("Enter a number: "))
+for i in range(num):
+    new_num = lst[-1] + lst[-2]
+    lst.append(new_num)
+new_lst = lst[:num]
+print(f"The Fibonacci series up to the length of N is")
+print(*new_lst)
+
+#Or,
+lst = [1,1]
+num = int(input("Enter a number: "))
+while (len(lst) <= num):
+    new_num = lst[-1] + lst[-2]
+    lst.append(new_num)
+new_lst = lst[:num]
+print(f"The Fibonacci series up to the length of N is")
+print(*new_lst)
+
+#Or, Chat GPT-
+# Get user input for the desired length of the Fibonacci series
+N = int(input("Enter the length of the Fibonacci series: "))
+
+# Initialize the first two Fibonacci numbers
+fibonacci_series = [1, 1]
+
+# Generate the Fibonacci series up to the specified length
+while len(fibonacci_series) < N:
+    next_number = fibonacci_series[-1] + fibonacci_series[-2]
+    fibonacci_series.append(next_number)
+
+# Print the generated Fibonacci series
+print("Fibonacci Series:")
+for number in fibonacci_series:
+    print(number, end=" ")
 
 
 
