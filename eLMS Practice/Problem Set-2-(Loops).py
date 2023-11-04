@@ -14,6 +14,30 @@ print(*numbers)
 print(*numbers, sep=",")
 
 
+#Problem-2:
+num = int(input())
+for i in range(num, 0, -1):
+    print(i, end=" ")
+
+#Or,
+num = int(input())
+lst = list(reversed(range(1,num+1)))
+for i in lst:
+    print(i, end=" ")
+
+#Or,    
+num = int(input())
+lst = list(map(int, (range(1, num+1))))
+lst_2 = sorted(lst, reverse=True)
+print(lst_2)
+for i in lst_2:
+    print(i, end=" ")
+
+#Or,
+
+
+
+
 #Problem-3:
 n = int(input())
 for x in range(1,n+1):
@@ -170,23 +194,26 @@ new_lst = lst[:num]
 print(f"The Fibonacci series up to the length of N is")
 print(*new_lst)
 
-#Or, Chat GPT-
-# Get user input for the desired length of the Fibonacci series
+#Or, Chat GPT- (1 dile vul ashe.)
+## Get user input for the desired length of the Fibonacci series
 N = int(input("Enter the length of the Fibonacci series: "))
 
-# Initialize the first two Fibonacci numbers
+## Initialize the first two Fibonacci numbers
 fibonacci_series = [1, 1]
 
-# Generate the Fibonacci series up to the specified length
+## Generate the Fibonacci series up to the specified length
 while len(fibonacci_series) < N:
     next_number = fibonacci_series[-1] + fibonacci_series[-2]
     fibonacci_series.append(next_number)
 
-# Print the generated Fibonacci series
+## Print the generated Fibonacci series
 print("Fibonacci Series:")
 for number in fibonacci_series:
     print(number, end=" ")
 
+
+
+#Problem - 10:
 
 
 #17-
