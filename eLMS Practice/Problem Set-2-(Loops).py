@@ -221,6 +221,55 @@ for i in range(1,N+2):
 print(i)
 
 
+#Problrm - 11: Ami korsi-
+number = int(input("Enter a number: "))
+
+reversed_number = []
+
+while number > 0:
+    last_digit = number % 10
+    reversed_number.append(last_digit)
+    number = number // 10
+
+for i in reversed_number:
+    print(i, end="")
+
+#Or, Habibur korse-
+n = int(input())
+reverse = ""
+# zero na hole loop chalabo e jonno while loop
+while(n > 0):
+    remainder = n % 10
+    reverse += str(remainder) + ""
+    n = n // 10
+print(reverse)
+
+#Or,
+n= input()
+for x in reversed(n):
+    print(x, end='') 
+
+#Or,GPT-
+# Get user input for a number
+number = int(input("Enter a number: "))
+
+# Initialize variables for the reversed number and the remainder
+reversed_number = 0
+
+# Use a while loop to reverse the number
+while number > 0:
+    # Get the last digit of the number
+    last_digit = number % 10
+    # Append the last digit to the reversed number
+    reversed_number = reversed_number * 10 + last_digit
+    # Remove the last digit from the original number
+    number = number // 10
+
+# Print the reversed number
+print("Reversed number:", reversed_number)
+
+
+
 #17-
 n = int(input("Enter the size of number: "))
 
