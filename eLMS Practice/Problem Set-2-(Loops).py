@@ -269,6 +269,88 @@ while number > 0:
 print("Reversed number:", reversed_number)
 
 
+#Prolem - 12:
+numbers = list(map(int, input().split()))
+for i in numbers:
+    if i == max(numbers):
+        print(i)
+
+#Or,Jodi while diye korte bole-
+numbers = list(map(int, input().split()))
+max = numbers[0]
+i= 0
+while i<len(numbers):
+    print(numbers[i])
+    if numbers[i] > max:
+        max = numbers[i]
+    i += 1
+print(max)
+
+
+#Problem - 13:
+num = list(map(int, input().split()))
+if len(num) == 1:
+    print("Cannot do this")
+else:
+    odd = 0
+    even = 0
+    for i in range(len(num)):
+        if i % 2 == 0:
+            even += num[i]
+        else:
+            odd += num[i]
+    print(f"Sum of the even index: {even}")
+    print(f"Sum of the odd index: {odd}")
+#Or,Huddai pechaisi-
+list = []
+print(f"Enter your numbers: (Enter 'f' when you are done.)")
+choices = 0
+while choices != 'f':
+    choice = input()
+    list.append(choice)
+    choices = choice
+else:
+    list.pop()
+    print(list)
+if len(list) == 1:
+    print("Not gonna work")
+else:
+    odd = 0
+    even = 0
+    for x in list:
+        indx = list.index(x)
+        if indx%2 == 0 and indx>0:
+            even += int(x)
+        elif indx == 0:
+            even+= int(x)
+        else:
+            odd += int(x)
+    print(f"Sum of odd index:{odd}")
+    print(f"Sum of even index:{even}")
+
+#Or,ektu kom pechaisi-
+a = []
+n = int(input("ENTER NUMBER OF ELEMENTS : "))
+for i in range (n):
+    a.append(input("ENTER ELEMENT : "))
+print(a)
+odd = 0
+even = 0
+for x in a:
+    if n != 1 :
+        indx = a.index(x)
+        if indx%2 == 0 and indx>0:
+            even += int(x)
+        elif indx == 0:
+            even+= int(x)
+        else:
+            odd += int(x)
+        print(odd)
+        print(even)
+    else:
+        print("Not gonna work")
+
+
 
 #17-
 n = int(input("Enter the size of number: "))
