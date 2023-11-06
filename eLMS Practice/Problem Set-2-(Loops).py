@@ -499,3 +499,33 @@ for i in range(1,n+1):
     for j in range(i):
         print(i**2, end=" ")
     print()
+
+
+
+
+n = int(input())
+for row in range(1,n+1):
+    for collum in range(1,n+1):
+        if row == collum:
+            print(1, end=" ")
+        else:
+            print(0, end=" ")
+    print()
+
+for i in range(1,n+1):
+    for j in range(i):
+        print('*', end=" ")
+    print()
+
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j, end=" ")
+    print()
+
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(i, end=" ")
+    print()
+
+for i in range(1,n+1):
+    print(i * '*')
