@@ -51,3 +51,37 @@ if float(p)==int(p):
     print("true")
 else:
     print("false")
+
+
+#Check if a string is a palindrome (reads the same forwards and backwards) without using built-in functions
+n = input("Enter a word: ")
+n = n.lower()
+is_palindrome = True
+
+i = 0
+j = 1
+while i < len(n)//2:
+    if n[i] == n[i-j]:
+        i += 1
+        j += 2
+    else:
+        is_palindrome = False
+        break
+
+print(is_palindrome)
+
+#Or,
+word = input()
+word = word.lower()
+
+lst1 = [x for x in word]
+
+lst2 = lst1[:]
+lst2.reverse()
+
+if lst1 == lst2:
+    is_pelindrom = True
+else:
+    is_pelindrom = False
+
+print(is_pelindrom)
