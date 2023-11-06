@@ -447,6 +447,27 @@ for i in range(len(hours)):
 
 
 
+#Problem - 16:
+time = list(map(int, input("Enter times of the players: ").split()))
+first = 0
+second = 0
+third = 0
+
+if first == 0:
+    first = min(time)
+    print(f"First Place: {time.index(first)}")
+    time[time.index(first)] = max(time) + 1
+
+if second == 0:
+    second = min(time)
+    print(f"Second Place: {time.index(second)}")
+    time[time.index(second)] = max(time) + 1
+
+if third == 0:
+    third = min(time)
+    print(f"Third Place: {time.index(third)}")
+
+
 
 #17-
 n = int(input("Enter the size of number: "))
