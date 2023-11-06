@@ -351,6 +351,43 @@ for x in a:
         print("Not gonna work")
 
 
+#Problem - 14:
+#shomosha hoche ulta print hoye and list akare print hoye-
+num = list(map(int, input("Enter the jersey number: ").split()))
+single = []
+double = []
+while ( 0 < len(num)):
+    n = num.pop()
+    if n in single:
+        double.append(n)
+    else:
+        single.append(n)
+if len(double) == 0:
+    print(f"No duplicates")
+else:
+    print(f"Duplicate jersey numbers: {double}")
+
+#Or, Perfect but pechano-
+num = list(map(int, input("Enter the jersey number: ").split()))
+single = []
+double = []
+no_double = True
+
+for n in num:
+    if n in single:
+        no_double = False
+        if not no_double and len(double) == 0:
+            print("Duplicate jersey numbers:", end=" ")
+        print(n, end=" ")
+        double.append(n)
+    else:
+        single.append(n)
+
+if no_double:
+    print(f"No duplicates")
+
+
+
 
 #17-
 n = int(input("Enter the size of number: "))
