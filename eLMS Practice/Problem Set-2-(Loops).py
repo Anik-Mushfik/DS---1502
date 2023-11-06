@@ -234,6 +234,14 @@ while number > 0:
 for i in reversed_number:
     print(i, end="")
 
+#Faiyaz -
+n = int(input())
+i = 0
+while n > 0:
+    i = n % 10
+    print(i, end="")
+    n = n // 10
+
 #Or, Habibur korse-
 n = int(input())
 reverse = ""
