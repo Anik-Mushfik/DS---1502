@@ -170,4 +170,7 @@ will be needed for these newly admitted students and the size of the last sectio
 '''
 
 num = int(input("Enter the number of admitted students: "))
-print(f"For {num} newly admitted students {(num // 35) + 1} sections will be needed and the size of the last section is {num % 35} students.")
+if num % 35 ==0:
+    print(f"For {num} newly admitted students {(num // 35)} sections will be needed and the size of the last section is 35 students.")
+else:
+    print(f"For {num} newly admitted students {(num // 35) + 1} sections will be needed and the size of the last section is {num % 35} students.")
