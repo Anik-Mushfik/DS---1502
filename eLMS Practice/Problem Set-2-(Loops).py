@@ -352,7 +352,23 @@ for x in a:
 
 
 #Problem - 14:
-#shomosha hoche ulta print hoye and list akare print hoye-
+num = list(map(int, input("Enter the jersey number: ").split()))
+single = []
+duplicate = []
+for n in num:
+    if n in single:
+        if n not in duplicate:
+            duplicate.append(n)
+    else:
+        single.append(n)
+if len(duplicate) == 0:
+    print(f"No duplicates")
+else:
+    print("Duplicate jersey numbers:", end=" ")
+    for d in duplicate:
+        print(d, end=" ")
+
+#Or, shomosha hoche ulta print hoye and list akare print hoye-
 num = list(map(int, input("Enter the jersey number: ").split()))
 single = []
 double = []
@@ -367,26 +383,44 @@ if len(double) == 0:
 else:
     print(f"Duplicate jersey numbers: {double}")
 
-#Or, Perfect but pechano-
+#Or,
 num = list(map(int, input("Enter the jersey number: ").split()))
 single = []
-double = []
+duplicate = []
 no_double = True
 
 for n in num:
     if n in single:
-        no_double = False
-        if not no_double and len(double) == 0:
-            print("Duplicate jersey numbers:", end=" ")
-        print(n, end=" ")
-        double.append(n)
+        if n not in duplicate:
+            no_double = False
+            if not no_double and len(duplicate) == 0:
+                print("Duplicate jersey numbers:", end=" ")
+            print(n, end=" ")
+            duplicate.append(n)
     else:
         single.append(n)
 
 if no_double:
     print(f"No duplicates")
 
-
+#Or, Habiburer-
+jerseys = input().split()
+j_numbers = [int (x) for x in jerseys]
+duplicate = []
+not_dupli = []
+for i in j_numbers:
+    if i in not_dupli:
+        if i not in duplicate:
+            duplicate.append(i)
+    else:
+        not_dupli.append(i)
+if duplicate:
+    print("Duplicate jersey numbers: ", end="")
+    for j in duplicate:
+        print(j, end=" ")
+    print()
+else:
+    print("No duplicate")
 
 
 #17-
