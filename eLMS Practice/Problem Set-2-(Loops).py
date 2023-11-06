@@ -431,6 +431,23 @@ else:
     print("No duplicate")
 
 
+
+#Problem - 15:
+hours = list(map(int, input("Hours Worked: ").split()))
+wage = list(map(int, input("Hourly Wage: ").split()))
+for i in range(len(hours)):
+    if (hours[i] > 40):
+        regular = 40 * wage[i]
+        over = (hours[i] - 40) * ((wage[i]) * 1.5)
+        total = regular + over
+        print(f"Employee {i+1}: {int(total)} BDT")
+    else:
+        total = hours[i] * wage[i]
+        print(f"Employee {i+1}: {total} BDT")
+
+
+
+
 #17-
 n = int(input("Enter the size of number: "))
 
