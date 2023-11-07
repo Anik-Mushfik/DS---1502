@@ -184,6 +184,18 @@ new_lst = lst[:num]
 print(f"The Fibonacci series up to the length of N is")
 print(*new_lst)
 
+#or,
+n=int(input())
+a,b=1,1
+if n == 1:
+    print(a) 
+else:
+    print(a,end=" ") 
+    print(b,end=" ")
+    for i in range(n-2):
+        a,b=b,a+b
+        print(b,end=" ")
+
 #Or,
 lst = [1,1]
 num = int(input("Enter a number: "))
@@ -467,6 +479,16 @@ if third == 0:
     third = min(time)
     print(f"Third Place: {time.index(third)}")
 
+#Or,
+time = input().split()
+time = [int(x) for x in time]
+for i in time:
+    if i == (sorted(time))[0]:
+        print(f"First palce: {time.index(i)}")
+    elif i == (sorted(time))[1]:
+        print(f"Seccond palce: {time.index(i)}")
+    elif i == (sorted(time))[2]:
+        print(f"Third palce: {time.index(i)}")
 
 
 #17-
