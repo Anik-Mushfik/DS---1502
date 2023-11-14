@@ -196,14 +196,15 @@ print(max)
 
 #linear search -
 lst = [2,12,23,56,64,81,92]
-not_found = True
+search = int(input())
+Found = False
 for i in lst:
-    if i == 81:
-        not_found = False
+    if i == search:
+        Found = True
         break
-if not_found:
-    print("Not Found")
-else:
+if Found:
     print("Found")
+else:
+    print("Not Found")
 
 
