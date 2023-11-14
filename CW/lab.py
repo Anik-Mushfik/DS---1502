@@ -174,3 +174,33 @@ if num % 35 ==0:
     print(f"For {num} newly admitted students {(num // 35)} sections will be needed and the size of the last section is 35 students.")
 else:
     print(f"For {num} newly admitted students {(num // 35) + 1} sections will be needed and the size of the last section is {num % 35} students.")
+
+
+
+
+#14/11/2023
+lst = [5,-1,3,6,8]
+sum = 0
+for i in lst:
+    sum += i
+avarage = sum/len(lst)
+print(avarage)
+
+max = lst[0]
+for i in lst:
+    if i > max:
+        max = i
+print(max)
+
+lst = [2,12,23,56,64,81,92]
+not_found = True
+#linear search, Binary search
+for i in lst:
+    if i == 81:
+        not_found = False
+        break
+if not_found:
+    print("Not Found")
+else:
+    print("Found")
+
