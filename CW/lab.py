@@ -192,9 +192,11 @@ for i in lst:
         max = i
 print(max)
 
+#linear search, Binary search
+
+#linear search -
 lst = [2,12,23,56,64,81,92]
 not_found = True
-#linear search, Binary search
 for i in lst:
     if i == 81:
         not_found = False
@@ -203,4 +205,5 @@ if not_found:
     print("Not Found")
 else:
     print("Found")
+
 
