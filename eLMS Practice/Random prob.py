@@ -85,3 +85,34 @@ else:
     is_pelindrom = False
 
 print(is_pelindrom)
+
+
+
+# Check if a number is a Armstrong number or not:
+num = input("Enter a number: ")
+
+sum = 0
+for i in num:
+    sum += int(i)**len(num)
+# print(sum)
+if int(num) == sum:
+    print("Armstrong number.")
+else:
+    print("Not Armstrong number.")
+
+
+# Reverse a given number - 
+num = input()
+for i in reversed(num):
+    print(i, end="")
+
+
+# Palindromic number
+word = [x for x in input()]
+ulta = [y for y in reversed(word)]
+# print(word)
+# print(ulta)
+if word == ulta:
+    print('Yes')
+else:
+    print('No')
