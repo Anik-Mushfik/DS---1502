@@ -381,6 +381,7 @@ for n in num:
             duplicate.append(n)
     else:
         single.append(n)
+
 if len(duplicate) == 0:
     print(f"No duplicates")
 else:
@@ -456,6 +457,23 @@ for i in range(len(hours)):
     else:
         total = hours[i] * wage[i]
         print(f"Employee {i+1}: {total} BDT")
+
+#Or,
+hours = list(map(int, input("Hours Worked: ").split()))
+wage = list(map(int, input("Hourly Wage: ").split()))
+x = 1
+for i in hours:
+    for j in wage:
+        if hours.index(i) == wage.index(j):
+            if (i > 40):
+                regular = 40 * j
+                over = (i - 40) * ((j) * 1.5)
+                total = regular + over
+                print(f"Employee{x} : {int(total)} BDT")
+            else:
+                total = i * j
+                print(f"Employee{x} : {total} BDT")
+    x = x+1
 
 
 
