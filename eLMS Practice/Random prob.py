@@ -85,3 +85,19 @@ else:
     is_pelindrom = False
 
 print(is_pelindrom)
+
+
+
+# Shopno offer-
+lst = ["chiken","coconut","fish","coca-cola","oats","oil","toast","lexux","biscuit","noodles"]
+n=input("The name of the product: ")
+
+if n in lst:
+    n1=int(input("The price: "))
+    print(f"Product name : {n}")
+    print(f"Product price : {n1}")
+    print("Date:12.10.23 ")
+else:
+    print(f"Product is not available.")
+if n==lst[2]:
+    print("You will get a gift")
