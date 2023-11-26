@@ -230,3 +230,139 @@ for element in mylist:
 for x in range(10):
     print(f"{x} occured for {count[x]} times.")
 
+
+
+
+#### Lab - 26/11/2023
+
+students_marks = {
+    '0152330101' : 19, 
+    '0152330119' : 15, 
+    '0152330123' : 12, 
+}
+
+while 1==1:
+#while (True):
+    student_ID = input("Enter Student ID: ") #key age theki thakle value modify hobe
+    if student_ID == 'Q':
+        break
+    marks = int(input("Enter mark: "))
+
+    students_marks[student_ID] = marks
+
+print(students_marks)
+
+
+
+students_marks = {}
+for i in range(5):
+    student_ID = input("Enter Student ID: ")
+    marks = int(input("Enter mark: "))
+
+    students_marks[student_ID] = marks
+
+sum = 0
+for mark in students_marks.values():
+    sum += mark
+avarage = sum/len(students_marks.values())
+print(f"Avarage: {avarage}")
+
+
+
+
+students_marks = {
+    '0152330101' : 19, 
+    '0152330119' : 15, 
+    '0152330123' : 12, 
+}
+
+search_ID = input("Enter Student ID: ")
+exist = False
+
+for i in students_marks.keys():
+    if i == search_ID:
+        exist = True
+        break
+
+if exist:
+    print(f"Mark: {students_marks[i]}")
+else:
+    print(f"Apologies! The Student Doesn't Exist.")
+
+
+# Or, 
+for id, marks in students_marks.items():
+    if id == search_ID:
+        print(f"Mark: {marks}")
+    else:
+        print(f"Apologies! The Student Doesn't Exist.")
+
+# Or, 
+if search_ID in students_marks.keys():
+    print(f"The mark for {search_ID}: {students_marks[search_ID]}")
+else:
+    print(f"Apologies! The Student Doesn't Exist.")
+
+
+
+# Word frequancy counter:
+data = "The quick brown fox jumps over the lazy dog"
+words = data.split() # Split funtion auto ekta list banaye
+
+words_num = {}
+
+for word in words:
+    if word in words_num.keys():
+        words_num[word.lower()] += 1
+    else:
+        words_num[word.lower()] = 1
+
+print(words_num)
+
+
+
+# Shopping Cart Total Bill - 
+shopping_cart = {}
+
+while True:
+    product = input("Enter Product name: ")
+    if product == 'Q':
+        break
+    price = int(input("Enter price: "))
+    shopping_cart[product] = price
+
+total = 0
+for i in shopping_cart.values():
+    total += i
+
+print(f"Your Prodect List:")
+for pro, prices in shopping_cart.items():
+    print(f"{pro} : {prices} taka")
+print(f"\nTotal bill: {total}")
+
+
+# Shopping Cart Total Bill with Discounted bill -
+shopping_cart = {}
+
+while True:
+    product = input("Enter Product name: ")
+    if product == 'Q':
+        break
+    price = int(input("Enter price: "))
+    shopping_cart[product] = price
+
+total = 0
+discount = 0
+for i in shopping_cart.values():
+    total += i
+    if i>300:
+        i -= (i*.1)
+        discount += i
+    else:
+        discount += i
+
+print(f"Your Prodect List:")
+for pro, prices in shopping_cart.items():
+    print(f"{pro} : {prices} taka")
+print(f"\nTotal bill: {total}")
+print(f"Discounted bill: {discount}")
