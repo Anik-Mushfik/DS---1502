@@ -357,12 +357,11 @@ for i in shopping_cart.values():
     total += i
     if i>300:
         i -= (i*.1)
-        discount += i
-    else:
-        discount += i
+    discount += i
 
-print(f"Your Prodect List:")
+print(f"\nYour Prodect List:")
 for pro, prices in shopping_cart.items():
-    print(f"{pro} : {prices} taka")
-print(f"\nTotal bill: {total}")
-print(f"Discounted bill: {discount}")
+    print(f"{pro} : {prices} BDT")
+    
+print(f"\nTotal bill: {total} BDT")
+print(f"Discounted bill: {discount} BDT\n")
