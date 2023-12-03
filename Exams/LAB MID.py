@@ -62,7 +62,7 @@ elif (typ.lower() == 'w'):
 else:
     print("Input Error!")
 
-# Or, (jamee)
+# Or, (jamee korse)-
 print("\t\t'Stark Industries Chocolate Factory'")
 print()
 print('What type of chocolate is it?')
