@@ -121,3 +121,34 @@ l_index = all_mark.index(low)
 l_stu = all_stu[l_index]
 
 print(f"{h_stu} got the highest mark ({high}) and {l_stu} got the lowest mark ({low})")
+# Or,
+num_stu = int(input("Enter num of students in class: "))
+n = int(input("Enter num of evaluations: "))
+all_stu = []
+all_mark = []
+
+for i in range(1,(num_stu+1)):
+    roll = int(input(f"Enter roll for student number {i}: "))
+    all_stu.append(roll)
+
+    mark = []
+    for j in range(1,n+1):
+        eval = int(input(f"Enter marks in Evaluation number {j}: "))
+        mark.append(eval)
+
+    total = sum(mark) - min(mark)
+
+    all_mark.append(total)
+
+for j in range(num_stu):
+    print(f"ID {all_stu[j]} got {all_mark[j]} in total")
+
+high = max(all_mark)
+h_index = all_mark.index(high)
+h_stu = all_stu[h_index]
+
+low = min(all_mark)
+l_index = all_mark.index(low)
+l_stu = all_stu[l_index]
+
+print(f"{h_stu} got the highest mark ({high}) and {l_stu} got the lowest mark ({low})")
