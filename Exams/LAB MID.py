@@ -19,7 +19,7 @@ else:
 
 
 ## Qustion - 2:
-print(f"\tMusfique's Chocolate Factory")
+print(f"\tMUSFIQUE's Chocolate Factory")
 print(f"\nWhich type of chocolate is it?")
 
 typ = input("Eter M/m for Milk chocolate and W/w for White chocolate: ")
