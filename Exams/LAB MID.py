@@ -87,3 +87,37 @@ else:
         print(f"Mega Pack\nPrice is: {250 + (250 * 0.25)}") 
     else:
         print(f"Error in the production line\nPrice is: {0}")
+
+
+## Qustion - 3:
+num_stu = int(input("Enter num of students in class: "))
+all_stu = []
+all_mark = []
+
+for i in range(1,(num_stu+1)):
+    roll = int(input(f"Enter roll for student number {i}: "))
+    all_stu.append(roll)
+
+    mark = []
+    eval1 = int(input("Enter marks in Evaluation number 1: "))
+    mark.append(eval1)
+    eval2 = int(input("Enter marks in Evaluation number 2: "))
+    mark.append(eval2)
+    eval3 = int(input("Enter marks in Evaluation number 3: "))
+    mark.append(eval3)
+    total = sum(mark) - min(mark)
+
+    all_mark.append(total)
+
+for j in range(num_stu):
+    print(f"ID {all_stu[j]} got {all_mark[j]} in total")
+
+high = max(all_mark)
+h_index = all_mark.index(high)
+h_stu = all_stu[h_index]
+
+low = min(all_mark)
+l_index = all_mark.index(low)
+l_stu = all_stu[l_index]
+
+print(f"{h_stu} got the highest mark ({high}) and {l_stu} got the lowest mark ({low})")
