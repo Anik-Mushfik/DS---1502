@@ -17,3 +17,41 @@ def save_user(**user):
 
 
 save_user(id= 154, name= "anik", age= 21)
+
+
+message = "a"
+def greet(name):
+    global message # Bad practice(try to avoid)
+    message = "b"
+
+
+greet(3)
+print(message)
+
+
+### Fizz Buzz algorithm
+def fizz_buzz(input):
+    if (input % 3 == 0) and (input % 5 == 0):
+        return "FizzBuzz"
+    elif (input % 3 == 0):
+        return "Fizz"
+    elif (input % 5 == 0):
+        return "Buzz"
+    else:
+        return input
+    
+
+print(fizz_buzz(3))
+
+# Or,
+def fizz_buzz(input):
+    if (input % 3 == 0) and (input % 5 == 0):
+        return "FizzBuzz"
+    if (input % 3 == 0):
+        return "Fizz"
+    if (input % 5 == 0):
+        return "Buzz"
+    return input
+    
+
+print(fizz_buzz(17))
