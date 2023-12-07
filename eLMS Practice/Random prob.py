@@ -148,3 +148,9 @@ while(i<=n):
         j=j+1
     print( )
     i=i+1
+
+
+
+# Print something with double qouts - 
+print(f"She said, \"Hello!\"")
+ ##** use print("\word\"") to print something with double qouts.
