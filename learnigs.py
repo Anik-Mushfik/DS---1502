@@ -55,3 +55,16 @@ def fizz_buzz(input):
     
 
 print(fizz_buzz(17))
+
+
+n=int(input())
+def add():
+    sum=0
+    for i in range(1,n+1):
+        a=int(input())
+        b=int(input())
+        c=a+b
+        sum=sum+c 
+    print(f"The addition is {sum}")
+
+add()
