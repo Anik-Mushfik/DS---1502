@@ -507,7 +507,17 @@ for i in time:
         print(f"Seccond palce: {time.index(i)}")
     elif i == (sorted(time))[2]:
         print(f"Third palce: {time.index(i)}")
+# Or, 
+time = list(map(int, input().split()))
+place = sorted(time)
+print(place)
+first = time.index(place[0])
+second = time.index(place[1])
+third = time.index(place[2])
 
+print(f"First Place: {first}")
+print(f"Second Place: {second}")
+print(f"Third Place: {third}")
 
 #17-
 n = int(input("Enter the size of number: "))

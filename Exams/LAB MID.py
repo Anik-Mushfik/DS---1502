@@ -91,8 +91,8 @@ else:
 
 ## Qustion - 3:
 num_stu = int(input("Enter num of students in class: "))
-all_stu = []
-all_mark = []
+all_stu = [1, 2]
+all_mark = [40, 38]
 
 for i in range(1,(num_stu+1)):
     roll = int(input(f"Enter roll for student number {i}: "))
