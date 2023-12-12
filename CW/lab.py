@@ -365,3 +365,46 @@ for pro, prices in shopping_cart.items():
     
 print(f"\nTotal bill: {total} BDT")
 print(f"Discounted bill: {discount} BDT\n")
+
+
+
+def juicer(fruit):
+    """Output the fruit juice."""
+    print(f"{fruit.title()} juice")
+
+juicer('apple')
+
+def factorial(n):
+    """Print n!"""
+    fact = 1
+    for i in range(2,n+1):
+        fact *= i
+    return fact
+
+num = int(input())
+facto = factorial(num)
+print(facto)
+
+
+def reca(lst0):
+    if len(lst0) == 0:
+        return 0
+    else:
+        return lst0[0] + reca(lst0[1:])
+
+lst = [2,3,5]
+print(reca(lst))
+
+def prime_num(num):
+    """Find out if the number is prime or not"""
+    if num < 2:
+        return False
+    else:
+        is_prime = True
+        for i in range(2,(num//2)+1):
+            if num%i == 0:
+                is_prime = False
+                break
+        return is_prime
+    
+print(prime_num(14))
