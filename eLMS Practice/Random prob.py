@@ -154,3 +154,12 @@ while(i<=n):
 # Print something with double qouts - 
 print(f"She said, \"Hello!\"")
  ##** use print("\word\"") to print something with double qouts.
+
+
+ # Random number generator
+import random
+
+chomolokka = ['anik', 'anas', 'abid', 'mahin', 'jayid', 'omayer', 'rion', 'jimmi', 'jabir', 'fahim']
+hotovaga = random.randint(0, 9)
+
+print(f"Hotovaga {chomolokka[hotovaga].title()} will pay the bill.")
