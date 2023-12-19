@@ -163,3 +163,29 @@ chomolokka = ['anik', 'anas', 'abid', 'mahin', 'jayid', 'omayer', 'rion', 'jimmi
 hotovaga = random.randint(0, 9)
 
 print(f"Hotovaga {chomolokka[hotovaga].title()} will pay the bill.")
+
+
+
+def add_score(student_id, score):
+    """Update the 'student_scores' dictionary"""
+    if student_id in student_scores:
+        student_scores[student_id].append(score)
+    else:
+        student_scores[student_id] = [score]
+
+def calculate_average(student_id):
+    """Return the average score of the corresponding student."""
+    if student_id in student_scores:
+        marks = student_scores[student_id]
+        return sum(marks) / len(marks)
+    else:
+        return -1
+
+student_scores = {}
+
+add_score("101", 85)
+add_score("102", 78)
+add_score("101", 92)
+print(calculate_average("101"))
+print(calculate_average("102"))
+print(calculate_average("104"))
