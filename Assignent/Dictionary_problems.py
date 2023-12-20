@@ -50,3 +50,16 @@ for dicts in lst:
         new[dvl[0]] = dvl[1]
 
 print(new)
+
+
+# Problem - 3:
+word = 'w3resource'
+dictionary = {}
+
+for i in word:
+    if i in dictionary:
+        dictionary[i] += 1
+    else:
+        dictionary[i] = 1
+
+print(dictionary)
