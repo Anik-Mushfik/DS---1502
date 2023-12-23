@@ -1,0 +1,5 @@
+Abul,36,Dhaka,15000.0,
+Babul,42,Dhaka,16080.0,
+Kamal,26,Chittagong,18400.0,
+Jamal,28,Rajshahi,19550.0,
+Karim,40,Dhaka,13680.0,
