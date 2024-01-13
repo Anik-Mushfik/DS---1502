@@ -622,3 +622,24 @@ for i in range(n):
     print()
 
 
+# 22-
+matrix_A = []
+matrix_B = []
+print(f"Enter Matrix A: ")
+for i in range(2):
+    matrix_A.append([int(x) for x in input().split()])
+print(f"\nEnter Matrix B: ")
+for j in range(3):
+    matrix_B.append([int(y) for y in input().split()])
+
+matrix = [[],[]]
+
+for i in range(2):
+    total = 0
+    for j in matrix_A[i]:
+        for k in matrix_B:
+            if matrix_A[i].index(j) == matrix_B.index(k):
+                total += j*k[i]
+    matrix[i].append(total)
+
+print(matrix)
