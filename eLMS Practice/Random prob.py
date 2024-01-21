@@ -189,3 +189,16 @@ add_score("101", 92)
 print(calculate_average("101"))
 print(calculate_average("102"))
 print(calculate_average("104"))
+
+
+## input1 : ABCDCDCA
+## input2 : CDC
+## Output : 2
+in_1 = input()
+in_2 = input()
+count = 0
+for i in range(len(in_1)):
+    if in_2 == in_1[i:(i+len(in_2))]:
+        count += 1
+
+print(count)
